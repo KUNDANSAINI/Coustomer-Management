@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#login #box{
+    width: auto;
+    height: 400px;
+    padding: 20px 40px;
+    border: 1px solid lightsalmon;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+#login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../media/pexels-albin-berlin-919073.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#login h2{
+    text-align: center;
+    color: white;
+}
+#login form label{
+    color: white;
+    margin-top: 5px;
+}
+#login form input{
+    color: white;
+    background: transparent;
+}
+#login hr{
+    color: white;
+}
+#login a{
+    text-decoration: none;
+}
+#login a:hover{
+    text-decoration: underline;
+    color: white;
+}
+#login button a{
+    text-decoration: none;
+    color: black;
+}
+#signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#signup h2{
+    text-align: center;
+    color: black;
+}
+#signup #d1{
+    display: flex;
+}
+#signup form h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#signup form p{
+    text-align: center;
+}
+#signup form a{
+    text-decoration: none;
+    font-size: 15px;
+}
+#signup form a:hover{
+    text-decoration: underline;
+}
+#header{
+    background: rgba(0, 0, 0, 0.881);
+}
+#header a{
+    color: white;
+}
+#header h6{
+    color: white;
+}
+#header #navbarSupportedContent{
+    justify-content: end;
+}
+#header .navbar-toggler{
+    border-color: white;
+}
+#header i{
+    color: white;
+}
+#mid {
+    margin: 20px 0px;
+}
+#mid .card{
+    width: auto;
+    height: 300px;
+}
+#mid .table{
+    width: auto;
+}
+#footer {
+    padding: 50px 0px;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.881);
+}
+#footer ul{
+    padding: 0px;
+    margin-top: 20px;
+}
+#footer ul a{
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    cursor: pointer;
+}
+#footer ul a:hover{
+    text-decoration: underline;
+}
+#footer h6{
+    color: dimgray;
+}
+#footer p{
+    color: white;
+}
+#footer span{
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+}
+#footer span i{
+    color: yellow;
+    font-size: 12px;
+    margin-right: 8px;
+}
+#footer i{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+#footer hr{
+    color: dimgray;
+}
+#footer ul li{
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+}
+#footer ul li a{
+    color: #93C83f;
+}
+#footer ul li a:hover{
+    color: white;
+}
+#footer #mail{
+    border-right: 1px solid dimgray;
+}

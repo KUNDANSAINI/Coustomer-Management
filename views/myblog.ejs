@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include('../particals/user/head.ejs')%>
+<body>
+        <!-- Header Start To Here -->
+        <%-include('../particals/user/header.ejs')%>
+        <!-- Header End To Here -->
+
+        <!-- Mid Start To Here -->
+        <section id="mid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="text-center">My Blogs</h2>
+                        <p><%=message%></p>
+                        <a href="/addblog"><button class="btn btn-primary form-control mt-2 mb-2">Add Blog</button></a>
+                        <table class="table table-hover">
+                            <tr>
+                                <th>S.No</th>
+                                <th>Blog Title</th>
+                                <th>Blog Image</th>
+                                <th>Blog Decripations</th>
+                                <th>Blog PostedDate</th>
+                                <th>Blog Update</th>
+                                <th>Blog Delete</th>
+                            </tr>
+                            <%data.forEach((value,key)=>{%>
+                                <tr>
+                                    <td><%=key+1%></td>
+                                    <td><%=value.title%></td>
+                                    <td><img style="width: 100px;" src="/storage/<%=value.img%>" alt=""></td>
+                                    <td><%=value.queots%></td>
+                                    <td><%=value.postedDate%></td>
+                                    <td><a href="/update/<%=value.id%>"><button class="btn btn-success">Update</button></a></td>
+                                    <td><a href="/blogdelete/<%=value.id%>"><button class="btn btn-danger">Delete</button></a></td>
+                                </tr>
+                            <%})%> 
+                            <%if(!data.length){%>
+                            <tr>
+                                <tr>
+                                    <td colspan="7"><h4>No Record Found</h4></td>
+                                </tr>
+                            </tr>
+                            <%}%>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Mid End To Here -->
+
+        
+</body>
+</html>

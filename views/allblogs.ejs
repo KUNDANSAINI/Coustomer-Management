@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include('../particals/user/head.ejs')%>
+<body>
+        <!-- Header Start To Here -->
+        <%-include('../particals/user/header.ejs')%>
+        <!-- Header End To Here -->
+
+        <!-- Mid Start To Here -->
+        <section id="mid">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center">All Blogs</h2>
+                    <%alldata.forEach((value)=>{%>
+                        <div class="col-md-6">
+                            <div class="card text-center mt-4">
+                                <img style="width: 100px;" src="/storage/<%=value.img%>" class="card-img-top d-flex mx-auto mt-2" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title"><%=value.title%></h5>
+                                  <p class="card-text"><%=value.queots%></p>
+                                  <button class="btn btn-dark mb-2"><%=value.postedBy%></button>
+                                  <h6>PostedDate: <%=value.postedDate%></h6>
+                                </div>
+                              </div>
+                        </div>
+                    <%})%>
+                </div>
+            </div>
+        </section>
+        <!-- Mid End To Here -->
+
+        <!-- Footer Start To Here -->
+        <%-include('../particals/user/footer.ejs')%>
+        <!-- Footer End To Here -->
+</body>
+</html>

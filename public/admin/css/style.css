@@ -1,0 +1,10 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#header{
+    background: gray;
+}
+#header button{
+    justify-content: end;
+}
